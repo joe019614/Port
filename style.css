@@ -18,10 +18,21 @@
 }
 
 .logo{
+    position: relative;
     font-size:25px;
     color: #031540;
     text-decoration: none;
     font-weight: 600;
+}
+
+.logo::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: goldenrod;
 }
 
 .navbar a{
@@ -147,3 +158,4 @@
 .btn:hover{
     box-shadow: 0 0 10px #00abf0;
 }
+
